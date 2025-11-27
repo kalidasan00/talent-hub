@@ -1,0 +1,4 @@
+[
+  {"id":"actors","title":"Actors","icon":"/assets/icons/actor.svg","count":320000},
+  {"id":"directors","title":"Directors","icon":"/assets/icons/director.svg","count":40000}
+]

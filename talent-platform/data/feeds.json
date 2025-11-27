@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "author": "Hemalatha Thiyagarajan",
+    "authorImg": "/assets/avatars/asha.jpg",
+    "role": "HR | Hiring | Talent Acquisition",
+    "content": "Microsoft is hiring freshers for Internship Program!",
+    "image": "/assets/posts/microsoft.png",
+    "likes": 143,
+    "comments": 202,
+    "shares": 2
+  },
+  {
+    "id": 2,
+    "author": "Anil Kumar",
+    "authorImg": "/assets/avatars/rohit.jpg",
+    "role": "Actor | Theatre Artist",
+    "content": "Just finished my shoot today 🎬 Feeling proud!",
+    "image": "/assets/posts/actor.jpg",
+    "likes": 89,
+    "comments": 16,
+    "shares": 1
+  }
+]
