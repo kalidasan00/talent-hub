@@ -1,74 +1,85 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
+
+  /* 🔥 Close MENU when clicked outside */
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(e.target) &&
+        !buttonRef.current.contains(e.target)
+      ) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
+
   return (
-    <header className="w-full bg-white shadow-md sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <header className="w-full bg-white shadow-md sticky top-0 z-50 border-b">
+      <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
 
         {/* ───────── LOGO ───────── */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-700 to-primary-500 flex items-center justify-center text-white font-bold">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-700 to-blue-500 flex items-center justify-center text-white font-bold">
             TP
           </div>
           <span className="hidden sm:block font-semibold text-xl text-gray-800">TalentHub</span>
         </Link>
 
         {/* ───────── DESKTOP NAV ───────── */}
-        <nav className="hidden md:flex items-center gap-8 text-gray-600 text-[15px] font-medium">
-          <Link href="/" className="hover:text-primary-600 flex items-center gap-1">🏠 Home</Link>
-          <Link href="/feed" className="hover:text-primary-600 flex items-center gap-1">📰 Feed</Link>
+        <nav className="hidden md:flex items-center gap-6 text-gray-600 font-medium">
 
-          {/* Explore → Artists Page */}
-          <Link href="/artists" className="hover:text-primary-600 flex items-center gap-1">
-            🔍 Explore
+          <Link href="/" className="hover:text-blue-600">🏠 Home</Link>
+          <Link href="/feed" className="hover:text-blue-600">📰 Feed</Link>
+          <Link href="/artists" className="hover:text-blue-600">🔍 Explore</Link>
+
+          <Link href="/login" className="hover:text-blue-600">Login</Link>
+          <Link href="/signup"
+            className="px-3 py-1.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+            Sign Up
           </Link>
-
-          <button className="hover:text-primary-600 flex items-center gap-1">➕ Create</button>
-          <Link href="/messages" className="hover:text-primary-600 text-xl">💬</Link>
-
-          <button className="relative hover:text-primary-600 text-xl">
-            🔔
-            <span className="absolute -top-1 -right-2 bg-red-500 text-white text-[10px] rounded-full px-1">
-              3
-            </span>
-          </button>
-
-          <Link href="/profile/me" className="hover:text-primary-600 text-xl">👤</Link>
         </nav>
 
-        <button className="md:hidden text-3xl" onClick={() => setOpen(!open)}>☰</button>
+        {/* ───────── MOBILE HAMBURGER ───────── */}
+        <button ref={buttonRef} className="md:hidden text-3xl"
+          onClick={() => setOpen(!open)}>
+          ☰
+        </button>
       </div>
 
       {/* ───────── MOBILE MENU ───────── */}
       {open && (
-        <div className="md:hidden bg-white border-t shadow-md px-6 py-4 flex flex-col gap-4 text-[16px] font-medium animate-fadeDown">
-          <Link href="/" onClick={() => setOpen(false)}>🏠 Home</Link>
-          <Link href="/feed" onClick={() => setOpen(false)}>📰 Feed</Link>
+        <div ref={menuRef}
+          className="md:hidden bg-white border-t shadow-md px-6 py-5 flex flex-col gap-4 font-medium">
 
-          {/* Explore → Artists Page */}
+          <Link href="/"    onClick={() => setOpen(false)}>🏠 Home</Link>
+          <Link href="/feed" onClick={() => setOpen(false)}>📰 Feed</Link>
           <Link href="/artists" onClick={() => setOpen(false)}>🔍 Explore</Link>
 
-          <button onClick={() => setOpen(false)}>➕ Create</button>
-          <Link href="/messages" onClick={() => setOpen(false)}>💬 Messages</Link>
-          <Link href="/notifications" onClick={() => setOpen(false)}>🔔 Notifications</Link>
-          <Link href="/profile/me" onClick={() => setOpen(false)}>👤 My Profile</Link>
+          <Link href="/login" onClick={() => setOpen(false)} className="text-blue-600 font-semibold">Login</Link>
+          <Link href="/signup" onClick={() => setOpen(false)}
+            className="bg-blue-600 text-white px-3 py-1.5 rounded-lg text-center">
+            Create Account
+          </Link>
         </div>
       )}
 
-      {/* ───────── MOBILE NAV BOTTOM ───────── */}
-      <div className="fixed bottom-0 left-0 w-full bg-white border-t shadow-lg md:hidden flex justify-around py-2 text-[23px]">
+      {/* ───────── MOBILE BOTTOM NAV ───────── */}
+      <div className="fixed bottom-0 left-0 w-full bg-white border-t shadow-lg md:hidden flex justify-around py-2 text-[22px] z-50">
         <Link href="/">🏠</Link>
         <Link href="/feed">📰</Link>
-
-        {/* Explore → Artists Page */}
         <Link href="/artists">🔍</Link>
-
-        <button>➕</button>
-        <Link href="/messages">💬</Link>
+        <Link href="/login">🔑</Link>
+        <Link href="/signup">✨</Link>
       </div>
     </header>
   );
