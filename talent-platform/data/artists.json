@@ -1,24 +1,104 @@
-[
-  {
-    "id": "artist-001",
-    "name": "Asha Rao",
-    "category": "actors",
-    "location": "Mumbai",
-    "experience": "5 years",
-    "price": "₹5000/day",
-    "avatar": "/assets/avatars/asha.jpg",
-    "skills": ["Hindi", "English", "Theatre"],
-    "bio": "Stage and screen actor with 5+ years of experience."
-  },
-  {
-    "id": "artist-002",
-    "name": "Rohit Kumar",
-    "category": "photographers",
-    "location": "Chennai",
-    "experience": "3 years",
-    "price": "₹3000/day",
-    "avatar": "/assets/avatars/rohit.jpg",
-    "skills": ["Portrait", "Event Photography"],
-    "bio": "Professional photographer specialising in portraits and events."
-  }
-]
+{
+  "categories": [
+    {
+      "name": "Actors",
+      "members": [
+        { "name": "Aarav Menon", "location": "Mumbai, India", "bio": "Versatile actor experienced in theatre and screen.", "image": "https://randomuser.me/api/portraits/men/11.jpg" },
+        { "name": "Riya Nair", "location": "Bangalore, India", "bio": "Performer skilled in ad shoots & drama roles.", "image": "https://randomuser.me/api/portraits/women/22.jpg" },
+        { "name": "Dhruv Sharma", "location": "Hyderabad, India", "bio": "Young passionate web-series actor.", "image": "https://randomuser.me/api/portraits/men/44.jpg" },
+        { "name": "Meera Joseph", "location": "Kochi, Kerala", "bio": "Model + actress featured in 12 short films.", "image": "https://randomuser.me/api/portraits/women/77.jpg" },
+        { "name": "Vikram Prakash", "location": "Delhi, India", "bio": "Strong screen presence & intense expressions.", "image": "https://randomuser.me/api/portraits/men/21.jpg" },
+        { "name": "Nayana Suresh", "location": "Chennai, India", "bio": "Film actress with 3 years theatre background.", "image": "https://randomuser.me/api/portraits/women/34.jpg" },
+        { "name": "Kabir Khan", "location": "Kolkata, India", "bio": "Performs emotional & villain character roles.", "image": "https://randomuser.me/api/portraits/men/52.jpg" },
+        { "name": "Sanjana Rao", "location": "Goa, India", "bio": "Actress for music videos, ads & OTT projects.", "image": "https://randomuser.me/api/portraits/women/12.jpg" },
+        { "name": "Harish Verma", "location": "Pune, India", "bio": "Natural performer, excels in dialogue delivery.", "image": "https://randomuser.me/api/portraits/men/39.jpg" },
+        { "name": "Ayana Biju", "location": "Kerala, India", "bio": "Fresh talent active in college film circle.", "image": "https://randomuser.me/api/portraits/women/61.jpg" }
+      ]
+    },
+    {
+      "name": "Directors",
+      "members": [
+        { "name": "Sandeep Iyer", "location": "Chennai", "bio": "Independent film director – realistic storytelling.", "image": "https://randomuser.me/api/portraits/men/65.jpg" },
+        { "name": "Neelima Rao", "location": "Mumbai", "bio": "Ad film & music video director.", "image": "https://randomuser.me/api/portraits/women/56.jpg" },
+        { "name": "Abhinav Krish", "location": "Hyderabad", "bio": "Thriller & indie short-film maker.", "image": "https://randomuser.me/api/portraits/men/3.jpg" },
+        { "name": "Kiran Gopal", "location": "Pune", "bio": "Feature film assistant director.", "image": "https://randomuser.me/api/portraits/men/19.jpg" }
+      ]
+    },
+    {
+      "name": "Musicians & Bands",
+      "members": [
+        { "name": "Anjali Radhakrishnan", "location": "Goa", "bio": "Indie singer cafe performer.", "image": "https://randomuser.me/api/portraits/women/15.jpg" },
+        { "name": "7Strings Band", "location": "Bengaluru", "bio": "Fusion rock stage performers.", "image": "https://randomuser.me/api/portraits/men/40.jpg" },
+        { "name": "Rehan Qureshi", "location": "Delhi", "bio": "EDM & trap music producer.", "image": "https://randomuser.me/api/portraits/men/42.jpg" },
+        { "name": "Rhythm Hive", "location": "Mumbai", "bio": "Live performing pop/rock band.", "image": "https://randomuser.me/api/portraits/men/60.jpg" }
+      ]
+    },
+    {
+      "name": "Dancers",
+      "members": [
+        { "name": "Sahana R", "location": "Chennai", "bio": "Bharatanatyam dancer – 200+ shows.", "image": "https://randomuser.me/api/portraits/women/24.jpg" },
+        { "name": "Arjun K", "location": "Mumbai", "bio": "Hip-hop & freestyle performer.", "image": "https://randomuser.me/api/portraits/men/33.jpg" },
+        { "name": "Urban Crew", "location": "Delhi", "bio": "Street dance team high-energy acts.", "image": "https://randomuser.me/api/portraits/men/29.jpg" }
+      ]
+    },
+    {
+      "name": "Models",
+      "members": [
+        { "name": "Trisha Louis", "location": "Mumbai", "bio": "Fashion & bridal shoot model.", "image": "https://randomuser.me/api/portraits/women/45.jpg" },
+        { "name": "Rohan Singh", "location": "Delhi", "bio": "Ramp model – fitness & fashion.", "image": "https://randomuser.me/api/portraits/men/46.jpg" },
+        { "name": "Anaya N", "location": "Goa", "bio": "Beachwear and western shoots.", "image": "https://randomuser.me/api/portraits/women/31.jpg" }
+      ]
+    },
+    {
+      "name": "Photographers",
+      "members": [
+        { "name": "Rithvik Lens", "location": "Hyderabad", "bio": "Portrait & fashion photography.", "image": "https://randomuser.me/api/portraits/men/12.jpg" },
+        { "name": "Aima Studio", "location": "Chennai", "bio": "Wedding & cinematic films.", "image": "https://randomuser.me/api/portraits/women/57.jpg" },
+        { "name": "Silhouette Works", "location": "Pune", "bio": "Music videos + model shoots.", "image": "https://randomuser.me/api/portraits/men/80.jpg" }
+      ]
+    },
+    {
+      "name": "Script Writers",
+      "members": [
+        { "name": "Devika Menon", "location": "Kochi", "bio": "Screenplay & dialogue writer.", "image": "https://randomuser.me/api/portraits/women/66.jpg" },
+        { "name": "Rohan Das", "location": "Bangalore", "bio": "Thriller & romantic short scripts.", "image": "https://randomuser.me/api/portraits/men/73.jpg" },
+        { "name": "Sameer Ali", "location": "Delhi", "bio": "OTT screenplay freelancer.", "image": "https://randomuser.me/api/portraits/men/74.jpg" }
+      ]
+    },
+    {
+      "name": "Editors",
+      "members": [
+        { "name": "FrameFix Studio", "location": "Mumbai", "bio": "Music video & ad edits.", "image": "https://randomuser.me/api/portraits/men/62.jpg" },
+        { "name": "Anusha EditPro", "location": "Hyderabad", "bio": "Color grading + sound sync.", "image": "https://randomuser.me/api/portraits/women/52.jpg" }
+      ]
+    },
+    {
+      "name": "Cinematographers",
+      "members": [
+        { "name": "LensCraft Visuals", "location": "Chennai", "bio": "Short-films, ads & travel docs.", "image": "https://randomuser.me/api/portraits/men/90.jpg" },
+        { "name": "Rhea Vision", "location": "Mumbai", "bio": "Slow-motion cinematic artist.", "image": "https://randomuser.me/api/portraits/women/92.jpg" }
+      ]
+    },
+    {
+      "name": "Makeup Artists",
+      "members": [
+        { "name": "Glow Diva", "location": "Mumbai", "bio": "Bridal makeup specialist.", "image": "https://randomuser.me/api/portraits/women/84.jpg" },
+        { "name": "ColorTouch Studio", "location": "Delhi", "bio": "Fashion & movie makeup.", "image": "https://randomuser.me/api/portraits/women/39.jpg" }
+      ]
+    },
+    {
+      "name": "Voice Artists",
+      "members": [
+        { "name": "Aravind VoiceOver", "location": "Kerala", "bio": "Narration + dubbing artist.", "image": "https://randomuser.me/api/portraits/men/15.jpg" },
+        { "name": "SoundCraft VOX", "location": "Chennai", "bio": "Documentary voice talent.", "image": "https://randomuser.me/api/portraits/women/28.jpg" }
+      ]
+    },
+    {
+      "name": "Child Artists",
+      "members": [
+        { "name": "Ishaan K", "location": "Mumbai", "bio": "School-age child actor for ads.", "image": "https://randomuser.me/api/portraits/boys/1.jpg" },
+        { "name": "Mehek P", "location": "Delhi", "bio": "Cute smile — ad roles.", "image": "https://randomuser.me/api/portraits/girls/2.jpg" }
+      ]
+    }
+  ]
+}

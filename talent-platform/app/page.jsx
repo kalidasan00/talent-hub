@@ -1,17 +1,20 @@
 import CategoryCard from "../components/CategoryCard";
 import ArtistCard from "../components/ArtistCard";
 import categories from "../data/categories.json";
-import artists from "../data/artists.json";
+import artistsData from "../data/artists.json";
 
 export default function HomePage() {
+  // Convert nested categories -> flat artist list
+  const allArtists = artistsData.categories.flatMap(cat => cat.members);
+
   return (
     <>
       {/* HERO SECTION */}
       <section className="mb-12">
         <div className="bg-gradient-to-r from-primary-700 to-primary-500 text-white rounded-3xl p-10 shadow-deep">
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            
-            {/* Left Text Section */}
+
+            {/* Left Side */}
             <div>
               <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                 Connect. Discover. <br /> Get Hired.
@@ -21,7 +24,7 @@ export default function HomePage() {
                 Find artists, creators and casting opportunities across India.
               </p>
 
-              {/* Search Box */}
+              {/* Search Bar */}
               <div className="mt-6">
                 <input
                   className="p-4 rounded-xl w-full md:w-96 bg-white text-gray-700 shadow-soft"
@@ -51,7 +54,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA QUICK SECTION */}
+      {/* QUICK CTA */}
       <section className="my-10 flex flex-col md:flex-row gap-6">
         <div className="bg-white rounded-2xl p-6 shadow-soft flex items-center gap-4 flex-1">
           <span className="text-3xl">📁</span>
@@ -70,7 +73,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CATEGORIES */}
+      {/* CATEGORIES LIST */}
       <section className="mb-12">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-2xl font-semibold">Categories</h2>
@@ -92,9 +95,10 @@ export default function HomePage() {
           </a>
         </div>
 
+        {/* 🔥 Fixed Mapping */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-          {artists.slice(0, 6).map((a) => (
-            <ArtistCard key={a.id} artist={a} />
+          {allArtists.slice(0, 6).map((artist, index) => (
+            <ArtistCard key={index} artist={artist} />
           ))}
         </div>
       </section>

@@ -21,12 +21,15 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center gap-8 text-gray-600 text-[15px] font-medium">
           <Link href="/" className="hover:text-primary-600 flex items-center gap-1">🏠 Home</Link>
           <Link href="/feed" className="hover:text-primary-600 flex items-center gap-1">📰 Feed</Link>
-          <Link href="/explore" className="hover:text-primary-600 flex items-center gap-1">🔍 Explore</Link>
+
+          {/* Explore → Artists Page */}
+          <Link href="/artists" className="hover:text-primary-600 flex items-center gap-1">
+            🔍 Explore
+          </Link>
 
           <button className="hover:text-primary-600 flex items-center gap-1">➕ Create</button>
           <Link href="/messages" className="hover:text-primary-600 text-xl">💬</Link>
 
-          {/* Notifications */}
           <button className="relative hover:text-primary-600 text-xl">
             🔔
             <span className="absolute -top-1 -right-2 bg-red-500 text-white text-[10px] rounded-full px-1">
@@ -37,16 +40,18 @@ export default function Navbar() {
           <Link href="/profile/me" className="hover:text-primary-600 text-xl">👤</Link>
         </nav>
 
-        {/* ───────── MOBILE MENU TOGGLE ───────── */}
         <button className="md:hidden text-3xl" onClick={() => setOpen(!open)}>☰</button>
       </div>
 
-      {/* ───────── MOBILE DROPDOWN MENU ───────── */}
+      {/* ───────── MOBILE MENU ───────── */}
       {open && (
         <div className="md:hidden bg-white border-t shadow-md px-6 py-4 flex flex-col gap-4 text-[16px] font-medium animate-fadeDown">
           <Link href="/" onClick={() => setOpen(false)}>🏠 Home</Link>
           <Link href="/feed" onClick={() => setOpen(false)}>📰 Feed</Link>
-          <Link href="/explore" onClick={() => setOpen(false)}>🔍 Explore</Link>
+
+          {/* Explore → Artists Page */}
+          <Link href="/artists" onClick={() => setOpen(false)}>🔍 Explore</Link>
+
           <button onClick={() => setOpen(false)}>➕ Create</button>
           <Link href="/messages" onClick={() => setOpen(false)}>💬 Messages</Link>
           <Link href="/notifications" onClick={() => setOpen(false)}>🔔 Notifications</Link>
@@ -54,11 +59,14 @@ export default function Navbar() {
         </div>
       )}
 
-      {/* ───────── MOBILE BOTTOM BAR (Instagram style) ───────── */}
+      {/* ───────── MOBILE NAV BOTTOM ───────── */}
       <div className="fixed bottom-0 left-0 w-full bg-white border-t shadow-lg md:hidden flex justify-around py-2 text-[23px]">
         <Link href="/">🏠</Link>
         <Link href="/feed">📰</Link>
-        <Link href="/explore">🔍</Link>
+
+        {/* Explore → Artists Page */}
+        <Link href="/artists">🔍</Link>
+
         <button>➕</button>
         <Link href="/messages">💬</Link>
       </div>
