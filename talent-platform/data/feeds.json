@@ -2,10 +2,10 @@
   {
     "id": 1,
     "author": "Hemalatha Thiyagarajan",
-    "authorImg": "/assets/avatars/asha.jpg",
+    "authorImg": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
     "role": "HR | Hiring | Talent Acquisition",
     "content": "Microsoft is hiring freshers for Internship Program!",
-    "image": "/assets/posts/microsoft.png",
+    "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f",
     "likes": 143,
     "comments": 202,
     "shares": 2
@@ -13,12 +13,211 @@
   {
     "id": 2,
     "author": "Anil Kumar",
-    "authorImg": "/assets/avatars/rohit.jpg",
+    "authorImg": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
     "role": "Actor | Theatre Artist",
     "content": "Just finished my shoot today 🎬 Feeling proud!",
-    "image": "/assets/posts/actor.jpg",
+    "image": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
     "likes": 89,
     "comments": 16,
     "shares": 1
+  },
+
+  {
+    "id": 3,
+    "author": "Aditi Sharma",
+    "authorImg": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
+    "role": "Model | Fashion Influencer",
+    "content": "New shoot done 💖 What do you think about this frame?",
+    "image": "https://images.unsplash.com/photo-1503341733017-190156e6c258",
+    "likes": 420,
+    "comments": 87,
+    "shares": 5
+  },
+  {
+    "id": 4,
+    "author": "Sanjay Rao",
+    "authorImg": "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
+    "role": "Film Director",
+    "content": "Location scouting for an upcoming short film. Big things loading! 🎥",
+    "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
+    "likes": 312,
+    "comments": 54,
+    "shares": 6
+  },
+  {
+    "id": 5,
+    "author": "Kritika Verma",
+    "authorImg": "https://images.unsplash.com/photo-1517841905240-472988babdf9",
+    "role": "Professional Dancer",
+    "content": "Grace in every move ✨",
+    "image": "https://images.unsplash.com/photo-1489323327342-ff32711c1e36",
+    "likes": 560,
+    "comments": 102,
+    "shares": 11
+  },
+  {
+    "id": 6,
+    "author": "Arjun Das",
+    "authorImg": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+    "role": "Music Composer",
+    "content": "Composed a new melody today — calm, slow, emotional 🎵",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4",
+    "likes": 189,
+    "comments": 33,
+    "shares": 3
+  },
+  {
+    "id": 7,
+    "author": "Meera Nandakumar",
+    "authorImg": "https://images.unsplash.com/photo-1544725176-7c40e5a2c9f9",
+    "role": "Cinematographer",
+    "content": "Golden hour frames hit different 🌅",
+    "image": "https://images.unsplash.com/photo-1499084732479-de2c02d45fc4",
+    "likes": 480,
+    "comments": 75,
+    "shares": 9
+  },
+  {
+    "id": 8,
+    "author": "Ritvik Shetty",
+    "authorImg": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+    "role": "Stand-up Comedian",
+    "content": "Full house show yesterday 🔥 Thank you Bangalore!",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "likes": 650,
+    "comments": 142,
+    "shares": 21
+  },
+  {
+    "id": 9,
+    "author": "Naina Kapoor",
+    "authorImg": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+    "role": "Fashion Photographer",
+    "content": "Monochrome mood 🖤📷",
+    "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f",
+    "likes": 228,
+    "comments": 43,
+    "shares": 4
+  },
+  {
+    "id": 10,
+    "author": "Salman Rahman",
+    "authorImg": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
+    "role": "Theatre Actor",
+    "content": "A powerful stage performance today. Energy was unreal!",
+    "image": "https://images.unsplash.com/photo-1598494982392-68c2c96ef7c1",
+    "likes": 367,
+    "comments": 50,
+    "shares": 8
+  },
+  {
+    "id": 11,
+    "author": "Varsha P",
+    "authorImg": "https://images.unsplash.com/photo-1518665750801-883c0d79b614",
+    "role": "Classical Dancer",
+    "content": "Odissi rehearsals continue 🪷",
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    "likes": 520,
+    "comments": 91,
+    "shares": 12
+  },
+  {
+    "id": 12,
+    "author": "Rahul Mehta",
+    "authorImg": "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
+    "role": "Short Film Producer",
+    "content": "Wrapped a 3-day indie shoot. Respect to the crew! 🎬",
+    "image": "https://images.unsplash.com/photo-1485841890310-6a055c88698a",
+    "likes": 309,
+    "comments": 61,
+    "shares": 7
+  },
+  {
+    "id": 13,
+    "author": "Jennifer George",
+    "authorImg": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
+    "role": "Model & Content Creator",
+    "content": "Soft portrait frames today ✨",
+    "image": "https://images.unsplash.com/photo-1503341733017-190156e6c258",
+    "likes": 720,
+    "comments": 134,
+    "shares": 22
+  },
+  {
+    "id": 14,
+    "author": "Vijay Varghese",
+    "authorImg": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+    "role": "Guitarist",
+    "content": "Stage lit up tonight ⚡🎸",
+    "image": "https://images.unsplash.com/photo-1511379938547-c1f69419868d",
+    "likes": 409,
+    "comments": 77,
+    "shares": 10
+  },
+  {
+    "id": 15,
+    "author": "Sneha Rao",
+    "authorImg": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+    "role": "Singer | Playback Artist",
+    "content": "New cover song out 🎤 Link in bio!",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4",
+    "likes": 640,
+    "comments": 99,
+    "shares": 18
+  },
+  {
+    "id": 16,
+    "author": "Aarav Menon",
+    "authorImg": "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
+    "role": "Film Editor",
+    "content": "Color grading magic 🔥 DaVinci Resolve FTW!",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "likes": 286,
+    "comments": 44,
+    "shares": 5
+  },
+  {
+    "id": 17,
+    "author": "Trisha V",
+    "authorImg": "https://images.unsplash.com/photo-1517841905240-472988babdf9",
+    "role": "Choreographer",
+    "content": "Training 12 students for a stage event 💃",
+    "image": "https://images.unsplash.com/photo-1489323327342-ff32711c1e36",
+    "likes": 519,
+    "comments": 80,
+    "shares": 9
+  },
+  {
+    "id": 18,
+    "author": "Harish Sundar",
+    "authorImg": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+    "role": "Music Producer",
+    "content": "Beats + Bass = Therapy 🎧🔥",
+    "image": "https://images.unsplash.com/photo-1499084732479-de2c02d45fc4",
+    "likes": 700,
+    "comments": 145,
+    "shares": 19
+  },
+  {
+    "id": 19,
+    "author": "Diya Prakash",
+    "authorImg": "https://images.unsplash.com/photo-1544725176-7c40e5a2c9f9",
+    "role": "Fashion Stylist",
+    "content": "Pastel shades today 💗",
+    "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f",
+    "likes": 334,
+    "comments": 58,
+    "shares": 6
+  },
+  {
+    "id": 20,
+    "author": "Nithin Joseph",
+    "authorImg": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
+    "role": "Voice Artist",
+    "content": "Recorded a commercial VO today 🔥",
+    "image": "https://images.unsplash.com/photo-1598494982392-68c2c96ef7c1",
+    "likes": 612,
+    "comments": 98,
+    "shares": 12
   }
 ]
