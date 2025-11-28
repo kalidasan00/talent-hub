@@ -10,7 +10,14 @@ export default function ReelsPage() {
   const allArtists = artistsData.categories.flatMap(c => c.members);
 
   return (
-    <div className="bg-black text-white overflow-y-auto snap-y snap-mandatory h-[calc(100vh-128px)] mt-[64px] mb-[64px]">
+    <div
+      className="
+      bg-black text-white
+      h-[calc(100vh-136px)]    /* viewport minus top+bottom bars */
+      snap-y snap-mandatory
+      overflow-y-scroll
+      "
+    >
       {reels.map(item => {
         const user = allArtists.find(a => a.username === item.user);
         return <ReelCard key={item.id} item={item} user={user} />;
