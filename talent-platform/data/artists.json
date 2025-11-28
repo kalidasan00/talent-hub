@@ -1,103 +1,278 @@
 {
   "categories": [
     {
-      "name": "Actors",
+      "category": "Actors",
       "members": [
-        { "name": "Aarav Menon", "location": "Mumbai, India", "bio": "Versatile actor experienced in theatre and screen.", "image": "https://randomuser.me/api/portraits/men/11.jpg" },
-        { "name": "Riya Nair", "location": "Bangalore, India", "bio": "Performer skilled in ad shoots & drama roles.", "image": "https://randomuser.me/api/portraits/women/22.jpg" },
-        { "name": "Dhruv Sharma", "location": "Hyderabad, India", "bio": "Young passionate web-series actor.", "image": "https://randomuser.me/api/portraits/men/44.jpg" },
-        { "name": "Meera Joseph", "location": "Kochi, Kerala", "bio": "Model + actress featured in 12 short films.", "image": "https://randomuser.me/api/portraits/women/77.jpg" },
-        { "name": "Vikram Prakash", "location": "Delhi, India", "bio": "Strong screen presence & intense expressions.", "image": "https://randomuser.me/api/portraits/men/21.jpg" },
-        { "name": "Nayana Suresh", "location": "Chennai, India", "bio": "Film actress with 3 years theatre background.", "image": "https://randomuser.me/api/portraits/women/34.jpg" },
-        { "name": "Kabir Khan", "location": "Kolkata, India", "bio": "Performs emotional & villain character roles.", "image": "https://randomuser.me/api/portraits/men/52.jpg" },
-        { "name": "Sanjana Rao", "location": "Goa, India", "bio": "Actress for music videos, ads & OTT projects.", "image": "https://randomuser.me/api/portraits/women/12.jpg" },
-        { "name": "Harish Verma", "location": "Pune, India", "bio": "Natural performer, excels in dialogue delivery.", "image": "https://randomuser.me/api/portraits/men/39.jpg" },
-        { "name": "Ayana Biju", "location": "Kerala, India", "bio": "Fresh talent active in college film circle.", "image": "https://randomuser.me/api/portraits/women/61.jpg" }
+        {
+          "id": 1,
+          "name": "Arjun Mehta",
+          "username": "arjun_actor",
+          "bio": "Film & theatre actor with 4 years experience.",
+          "skills": ["Acting", "Dialogue delivery", "Theatre"],
+          "location": "Mumbai",
+          "profilePic": "https://i.pravatar.cc/300?img=12",
+          "followers": 2400
+        },
+        {
+          "id": 2,
+          "name": "Priya Nair",
+          "username": "priya_nair_act",
+          "bio": "Performer with emotional depth and screen presence.",
+          "skills": ["Method acting", "Expressions", "Screen tests"],
+          "location": "Kochi",
+          "profilePic": "https://i.pravatar.cc/300?img=48",
+          "followers": 3100
+        },
+        {
+          "id": 3,
+          "name": "Ravi Sharma",
+          "username": "ravi_drama",
+          "bio": "National theatre festival finalist.",
+          "skills": ["Drama", "Voice throw", "Stage acting"],
+          "location": "Delhi",
+          "profilePic": "https://i.pravatar.cc/300?img=32",
+          "followers": 1700
+        },
+        {
+          "id": 4,
+          "name": "Nisha Rao",
+          "username": "nisha_act",
+          "bio": "Performed in 18+ short films.",
+          "skills": ["Acting", "Improvisation", "Script reading"],
+          "location": "Hyderabad",
+          "profilePic": "https://i.pravatar.cc/300?img=36",
+          "followers": 2800
+        },
+        {
+          "id": 5,
+          "name": "Vikram Iyer",
+          "username": "vikram_performer",
+          "bio": "Versatile actor for ads, drama & cinema.",
+          "skills": ["Ads modelling", "Emotional range", "Voice"],
+          "location": "Chennai",
+          "profilePic": "https://i.pravatar.cc/300?img=14",
+          "followers": 3500
+        }
       ]
     },
     {
-      "name": "Directors",
+      "category": "Photographers",
       "members": [
-        { "name": "Sandeep Iyer", "location": "Chennai", "bio": "Independent film director – realistic storytelling.", "image": "https://randomuser.me/api/portraits/men/65.jpg" },
-        { "name": "Neelima Rao", "location": "Mumbai", "bio": "Ad film & music video director.", "image": "https://randomuser.me/api/portraits/women/56.jpg" },
-        { "name": "Abhinav Krish", "location": "Hyderabad", "bio": "Thriller & indie short-film maker.", "image": "https://randomuser.me/api/portraits/men/3.jpg" },
-        { "name": "Kiran Gopal", "location": "Pune", "bio": "Feature film assistant director.", "image": "https://randomuser.me/api/portraits/men/19.jpg" }
+        {
+          "id": 6,
+          "name": "Ayaan Khan",
+          "username": "ayaan_shots",
+          "bio": "Portrait & outdoor photographer.",
+          "skills": ["Portraits", "Color grading", "Lighting"],
+          "location": "Mumbai",
+          "profilePic": "https://i.pravatar.cc/300?img=23",
+          "followers": 4100
+        },
+        {
+          "id": 7,
+          "name": "Meera Das",
+          "username": "meera_lens",
+          "bio": "Wedding + candid specialist.",
+          "skills": ["Wedding", "Candid", "Album edits"],
+          "location": "Kolkata",
+          "profilePic": "https://i.pravatar.cc/300?img=47",
+          "followers": 3200
+        },
+        {
+          "id": 8,
+          "name": "Rohit Verma",
+          "username": "rohit_frames",
+          "bio": "Travel & street capture explorer.",
+          "skills": ["Travel shots", "Drone work", "Night frames"],
+          "location": "Delhi",
+          "profilePic": "https://i.pravatar.cc/300?img=29",
+          "followers": 5400
+        },
+        {
+          "id": 9,
+          "name": "Tara Menon",
+          "username": "tara_focus",
+          "bio": "Studio beauty & fashion shoots.",
+          "skills": ["Studio lighting", "Retouching", "Fashion"],
+          "location": "Bangalore",
+          "profilePic": "https://i.pravatar.cc/300?img=56",
+          "followers": 2600
+        },
+        {
+          "id": 10,
+          "name": "Sameer Gupta",
+          "username": "sameer_clicks",
+          "bio": "Product & food photographer.",
+          "skills": ["Product shots", "Macro setup", "Composition"],
+          "location": "Pune",
+          "profilePic": "https://i.pravatar.cc/300?img=38",
+          "followers": 3700
+        }
       ]
     },
     {
-      "name": "Musicians & Bands",
+      "category": "Singers",
       "members": [
-        { "name": "Anjali Radhakrishnan", "location": "Goa", "bio": "Indie singer cafe performer.", "image": "https://randomuser.me/api/portraits/women/15.jpg" },
-        { "name": "7Strings Band", "location": "Bengaluru", "bio": "Fusion rock stage performers.", "image": "https://randomuser.me/api/portraits/men/40.jpg" },
-        { "name": "Rehan Qureshi", "location": "Delhi", "bio": "EDM & trap music producer.", "image": "https://randomuser.me/api/portraits/men/42.jpg" },
-        { "name": "Rhythm Hive", "location": "Mumbai", "bio": "Live performing pop/rock band.", "image": "https://randomuser.me/api/portraits/men/60.jpg" }
+        {
+          "id": 11,
+          "name": "Karthik Rao",
+          "username": "karthik_voice",
+          "bio": "Bollywood & Carnatic trained singer.",
+          "skills": ["Vocals", "Classical", "Playback"],
+          "location": "Chennai",
+          "profilePic": "https://i.pravatar.cc/300?img=18",
+          "followers": 4800
+        },
+        {
+          "id": 12,
+          "name": "Sana Qureshi",
+          "username": "sana_melody",
+          "bio": "Soft & romantic tone specialist.",
+          "skills": ["Melodic", "Recording", "Riyaaz"],
+          "location": "Mumbai",
+          "profilePic": "https://i.pravatar.cc/300?img=49",
+          "followers": 5600
+        },
+        {
+          "id": 13,
+          "name": "Aditya J",
+          "username": "aditya_vocal",
+          "bio": "Performs indie + pop originals.",
+          "skills": ["Pop", "Songwriting", "Guitar"],
+          "location": "Delhi",
+          "profilePic": "https://i.pravatar.cc/300?img=26",
+          "followers": 3500
+        },
+        {
+          "id": 14,
+          "name": "Nikita Paul",
+          "username": "nikita_harmony",
+          "bio": "Harmonic layering artist.",
+          "skills": ["Harmonies", "High notes", "Recording"],
+          "location": "Goa",
+          "profilePic": "https://i.pravatar.cc/300?img=51",
+          "followers": 2900
+        },
+        {
+          "id": 15,
+          "name": "Zayed Ahmed",
+          "username": "zayed_sings",
+          "bio": "Stage performer + indie covers.",
+          "skills": ["Stage presence", "Backing tracks", "Live shows"],
+          "location": "Mumbai",
+          "profilePic": "https://i.pravatar.cc/300?img=15",
+          "followers": 4300
+        }
       ]
     },
     {
-      "name": "Dancers",
+      "category": "Dancers",
       "members": [
-        { "name": "Sahana R", "location": "Chennai", "bio": "Bharatanatyam dancer – 200+ shows.", "image": "https://randomuser.me/api/portraits/women/24.jpg" },
-        { "name": "Arjun K", "location": "Mumbai", "bio": "Hip-hop & freestyle performer.", "image": "https://randomuser.me/api/portraits/men/33.jpg" },
-        { "name": "Urban Crew", "location": "Delhi", "bio": "Street dance team high-energy acts.", "image": "https://randomuser.me/api/portraits/men/29.jpg" }
+        {
+          "id": 16,
+          "name": "Rhea Kapoor",
+          "username": "rhea_dance",
+          "bio": "Hip-hop + contemporary fusion.",
+          "skills": ["Hip-Hop", "Freestyle", "Choreo"],
+          "location": "Delhi",
+          "profilePic": "https://i.pravatar.cc/300?img=63",
+          "followers": 3900
+        },
+        {
+          "id": 17,
+          "name": "Ankit Johar",
+          "username": "ankit_groove",
+          "bio": "Competition-level freestyle.",
+          "skills": ["Krump", "Locking", "Choreo"],
+          "location": "Pune",
+          "profilePic": "https://i.pravatar.cc/300?img=34",
+          "followers": 2800
+        },
+        {
+          "id": 18,
+          "name": "Simran Kaur",
+          "username": "simran_moves",
+          "bio": "Bollywood + stage performer.",
+          "skills": ["Bollywood", "Stage coord", "Team acts"],
+          "location": "Mumbai",
+          "profilePic": "https://i.pravatar.cc/300?img=52",
+          "followers": 4600
+        },
+        {
+          "id": 19,
+          "name": "Rohan Chakraborty",
+          "username": "rohan_stepup",
+          "bio": "Trained in contemporary & ballet.",
+          "skills": ["Ballet", "Contemporary", "Strength"],
+          "location": "Bangalore",
+          "profilePic": "https://i.pravatar.cc/300?img=22",
+          "followers": 3400
+        },
+        {
+          "id": 20,
+          "name": "Ananya Joshi",
+          "username": "ananya_dance",
+          "bio": "Dance instructor + live shows.",
+          "skills": ["Teaching", "Stage shows", "Choreo"],
+          "location": "Chennai",
+          "profilePic": "https://i.pravatar.cc/300?img=50",
+          "followers": 5100
+        }
       ]
     },
     {
-      "name": "Models",
+      "category": "Filmmakers",
       "members": [
-        { "name": "Trisha Louis", "location": "Mumbai", "bio": "Fashion & bridal shoot model.", "image": "https://randomuser.me/api/portraits/women/45.jpg" },
-        { "name": "Rohan Singh", "location": "Delhi", "bio": "Ramp model – fitness & fashion.", "image": "https://randomuser.me/api/portraits/men/46.jpg" },
-        { "name": "Anaya N", "location": "Goa", "bio": "Beachwear and western shoots.", "image": "https://randomuser.me/api/portraits/women/31.jpg" }
-      ]
-    },
-    {
-      "name": "Photographers",
-      "members": [
-        { "name": "Rithvik Lens", "location": "Hyderabad", "bio": "Portrait & fashion photography.", "image": "https://randomuser.me/api/portraits/men/12.jpg" },
-        { "name": "Aima Studio", "location": "Chennai", "bio": "Wedding & cinematic films.", "image": "https://randomuser.me/api/portraits/women/57.jpg" },
-        { "name": "Silhouette Works", "location": "Pune", "bio": "Music videos + model shoots.", "image": "https://randomuser.me/api/portraits/men/80.jpg" }
-      ]
-    },
-    {
-      "name": "Script Writers",
-      "members": [
-        { "name": "Devika Menon", "location": "Kochi", "bio": "Screenplay & dialogue writer.", "image": "https://randomuser.me/api/portraits/women/66.jpg" },
-        { "name": "Rohan Das", "location": "Bangalore", "bio": "Thriller & romantic short scripts.", "image": "https://randomuser.me/api/portraits/men/73.jpg" },
-        { "name": "Sameer Ali", "location": "Delhi", "bio": "OTT screenplay freelancer.", "image": "https://randomuser.me/api/portraits/men/74.jpg" }
-      ]
-    },
-    {
-      "name": "Editors",
-      "members": [
-        { "name": "FrameFix Studio", "location": "Mumbai", "bio": "Music video & ad edits.", "image": "https://randomuser.me/api/portraits/men/62.jpg" },
-        { "name": "Anusha EditPro", "location": "Hyderabad", "bio": "Color grading + sound sync.", "image": "https://randomuser.me/api/portraits/women/52.jpg" }
-      ]
-    },
-    {
-      "name": "Cinematographers",
-      "members": [
-        { "name": "LensCraft Visuals", "location": "Chennai", "bio": "Short-films, ads & travel docs.", "image": "https://randomuser.me/api/portraits/men/90.jpg" },
-        { "name": "Rhea Vision", "location": "Mumbai", "bio": "Slow-motion cinematic artist.", "image": "https://randomuser.me/api/portraits/women/92.jpg" }
-      ]
-    },
-    {
-      "name": "Makeup Artists",
-      "members": [
-        { "name": "Glow Diva", "location": "Mumbai", "bio": "Bridal makeup specialist.", "image": "https://randomuser.me/api/portraits/women/84.jpg" },
-        { "name": "ColorTouch Studio", "location": "Delhi", "bio": "Fashion & movie makeup.", "image": "https://randomuser.me/api/portraits/women/39.jpg" }
-      ]
-    },
-    {
-      "name": "Voice Artists",
-      "members": [
-        { "name": "Aravind VoiceOver", "location": "Kerala", "bio": "Narration + dubbing artist.", "image": "https://randomuser.me/api/portraits/men/15.jpg" },
-        { "name": "SoundCraft VOX", "location": "Chennai", "bio": "Documentary voice talent.", "image": "https://randomuser.me/api/portraits/women/28.jpg" }
-      ]
-    },
-    {
-      "name": "Child Artists",
-      "members": [
-        { "name": "Ishaan K", "location": "Mumbai", "bio": "School-age child actor for ads.", "image": "https://randomuser.me/api/portraits/boys/1.jpg" },
-        { "name": "Mehek P", "location": "Delhi", "bio": "Cute smile — ad roles.", "image": "https://randomuser.me/api/portraits/girls/2.jpg" }
+        {
+          "id": 21,
+          "name": "Kabir Iqbal",
+          "username": "kabir_films",
+          "bio": "Short film director.",
+          "skills": ["Direction", "Storyboarding", "Editing"],
+          "location": "Mumbai",
+          "profilePic": "https://i.pravatar.cc/300?img=30",
+          "followers": 4200
+        },
+        {
+          "id": 22,
+          "name": "Maya Singh",
+          "username": "maya_cinema",
+          "bio": "Assistant director + screenplay writer.",
+          "skills": ["Writing", "AD Work", "Shot planning"],
+          "location": "Delhi",
+          "profilePic": "https://i.pravatar.cc/300?img=55",
+          "followers": 3100
+        },
+        {
+          "id": 23,
+          "name": "Harsh Patel",
+          "username": "harsh_edit",
+          "bio": "Post-production + sound design.",
+          "skills": ["Editing", "Sound FX", "Color grade"],
+          "location": "Ahmedabad",
+          "profilePic": "https://i.pravatar.cc/300?img=33",
+          "followers": 3600
+        },
+        {
+          "id": 24,
+          "name": "Ritika Verma",
+          "username": "ritika_cinema",
+          "bio": "Ad film + documentary director.",
+          "skills": ["Ads", "Docu-film", "VFX knowledge"],
+          "location": "Bangalore",
+          "profilePic": "https://i.pravatar.cc/300?img=61",
+          "followers": 2800
+        },
+        {
+          "id": 25,
+          "name": "Faizal Noor",
+          "username": "faizal_camera",
+          "bio": "Cinematographer with RED & Sony FX experience.",
+          "skills": ["Camera work", "Shot framing", "Lighting setups"],
+          "location": "Hyderabad",
+          "profilePic": "https://i.pravatar.cc/300?img=19",
+          "followers": 5300
+        }
       ]
     }
   ]

@@ -9,40 +9,41 @@ import SearchBar from "../../components/SearchBar";
 export default function ArtistsPageClient() {
 
   const params = useSearchParams();
-  const category = params.get("category");
+  const category = params.get("category"); // ?category=actors
 
+  // FIXED category reading
   const allArtists = artistsData.categories.flatMap(c =>
-    category
-      ? (c.name?.toLowerCase() === category.toLowerCase() ? c.members : [])
-      : c.members
+    category && c.category.toLowerCase() !== category.toLowerCase()
+      ? [] : c.members
   );
 
   const [search, setSearch] = useState("");
 
-  const filtered = allArtists.filter(a => {
-    const q = search.toLowerCase();
-    return a.name?.toLowerCase().includes(q) || a.role?.toLowerCase().includes(q);
-  });
+  // FIXED search field (role removed → using name + skills)
+  const filtered = allArtists.filter(a =>
+    a.name.toLowerCase().includes(search.toLowerCase()) ||
+    a.skills.join(" ").toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
-    <main className="px-6 py-10 max-w-6xl mx-auto">
+    <main className="px-4 pt-6 pb-24 max-w-6xl mx-auto">
 
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold">
-          {category ? `${category} Artists` : "All Artists"}
-        </h1>
-        <p className="text-gray-500">{filtered.length} results</p>
+      <div className="flex justify-between items-center mb-3">
+        <h1 className="text-2xl font-bold">Explore</h1>
+        <p className="text-gray-500 text-sm">{filtered.length} found</p>
       </div>
 
-      <SearchBar onSearch={setSearch} />
+      {/* FILTER UI */}
+      <div className="bg-white rounded-xl p-3 shadow-sm border">
+        <SearchBar onSearch={setSearch} />
+      </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-8">
+      {/* ARTIST GRID */}
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-5">
         {filtered.length ? (
           filtered.map((artist, i) => <ArtistCard key={i} artist={artist} />)
         ) : (
-          <p className="text-center text-gray-400 col-span-full mt-10 text-lg">
-            No artists found 😕
-          </p>
+          <p className="col-span-full text-center text-gray-400 mt-4">No results 😕</p>
         )}
       </div>
 

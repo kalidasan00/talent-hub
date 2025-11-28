@@ -40,6 +40,10 @@ export default function Navbar() {
 
           <Link href="/" className="hover:text-blue-600">🏠 Home</Link>
           <Link href="/feed" className="hover:text-blue-600">📰 Feed</Link>
+
+          {/* 🔥 NEW TOP REELS BUTTON */}
+          <Link href="/reels" className="hover:text-blue-600 font-semibold">🎥 Reels</Link>
+
           <Link href="/artists" className="hover:text-blue-600">🔍 Explore</Link>
 
           <Link href="/login" className="hover:text-blue-600">Login</Link>
@@ -61,8 +65,9 @@ export default function Navbar() {
         <div ref={menuRef}
           className="md:hidden bg-white border-t shadow-md px-6 py-5 flex flex-col gap-4 font-medium">
 
-          <Link href="/"    onClick={() => setOpen(false)}>🏠 Home</Link>
+          <Link href="/" onClick={() => setOpen(false)}>🏠 Home</Link>
           <Link href="/feed" onClick={() => setOpen(false)}>📰 Feed</Link>
+          <Link href="/reels" onClick={() => setOpen(false)}>🎥 Reels</Link>
           <Link href="/artists" onClick={() => setOpen(false)}>🔍 Explore</Link>
 
           <Link href="/login" onClick={() => setOpen(false)} className="text-blue-600 font-semibold">Login</Link>
@@ -73,14 +78,24 @@ export default function Navbar() {
         </div>
       )}
 
-      {/* ───────── MOBILE BOTTOM NAV ───────── */}
-      <div className="fixed bottom-0 left-0 w-full bg-white border-t shadow-lg md:hidden flex justify-around py-2 text-[22px] z-50">
-        <Link href="/">🏠</Link>
-        <Link href="/feed">📰</Link>
-        <Link href="/artists">🔍</Link>
-        <Link href="/login">🔑</Link>
-        <Link href="/signup">✨</Link>
+      {/* 🔥 Modern Mobile Bottom Navbar (Reels Center) */}
+      <div className="fixed bottom-0 left-0 w-full bg-white border-t shadow-lg md:hidden
+                      flex justify-around items-center py-2 text-[24px] z-50">
+
+        <Link href="/"        className="hover:scale-110 transition">🏠</Link>
+        <Link href="/feed"    className="hover:scale-110 transition">📰</Link>
+
+        {/* 🔥 Highlighted Center Reel Button */}
+        <Link href="/reels"
+          className=" hover:scale-110 transition">
+          🎥
+        </Link>
+
+        <Link href="/artists" className="hover:scale-110 transition">🔍</Link>
+        <Link href="/profile" className="hover:scale-110 transition">👤</Link>
+
       </div>
+
     </header>
   );
 }
